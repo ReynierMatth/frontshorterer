@@ -27,7 +27,7 @@ import { Configuration }                                     from '../configurat
 @Injectable()
 export class UrlService {
 
-    protected basePath = 'https://matturlshorter.swagger.io/v2';
+    protected basePath = 'https://shorterurl-42.herokuapp.com/';
     public defaultHeaders = new HttpHeaders();
     public configuration = new Configuration();
 
