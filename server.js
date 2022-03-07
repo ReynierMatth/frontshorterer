@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-app.use(express.static(__dirname + '/dist/matthsorter'));
+app.use(express.static(__dirname + '/dist/matt-poc-url-reducer'));
 app.get('/*', function(req,res) {
   res.sendFile(path.join(__dirname+
-    '/dist/mattshorter/index.html'));});
+    '/dist/matt-poc-url-reducer/index.html'));});
 app.listen(process.env.PORT || 8080);
