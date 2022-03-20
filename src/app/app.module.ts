@@ -20,8 +20,6 @@ import {MatAutocompleteModule} from "@angular/material/autocomplete";
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
 import {MatToolbarModule} from '@angular/material/toolbar';
-
-import { ApiModule } from './api.module';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -32,7 +30,6 @@ import { HttpClientModule } from '@angular/common/http';
     ReducerUrlComponent
   ],
   imports: [
-    ApiModule,
     HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,

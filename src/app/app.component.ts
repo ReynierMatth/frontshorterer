@@ -1,7 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import {UrlService} from "./api/url.service";
-import {Url} from "./model/url";
 
 @Component({
   selector: 'app-root',
@@ -15,7 +13,7 @@ export class AppComponent implements OnInit{
     '(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?';
   result = '';
 
-  constructor(private urlService: UrlService) {
+  constructor() {
   }
 
 
@@ -29,9 +27,6 @@ export class AppComponent implements OnInit{
     console.log("submit")
     if(this.urlForm?.value != null){
       console.log(this.urlForm.value);
-      let urlList: string[] = [this.urlForm.value];
-      let urlToAdd: Url = {name:this.urlForm.value};
-      this.urlService.addUrl(urlToAdd, 'body', false );
 
     }
   }
